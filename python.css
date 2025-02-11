@@ -18,3 +18,21 @@ table {
   background-color: bisque;
   color: black;
 }
+
+.slide-code {
+  width: 600px;
+  background-color: black;
+  color: rgb(2, 213, 2);
+}
+
+.code-line {
+  line-height: 2;
+}
+
+.code-comment {
+  color: grey;
+}
+
+.code-result {
+  color: white;
+}
