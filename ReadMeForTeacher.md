@@ -4,3 +4,6 @@ The team work together with the index.html.
 Abdallah is responsible for the math.html.
 Bright is responsible for the communication.html.
 Shuai is responsible for the python.html.
+
+The address is
+https://shuai99999.github.io/
