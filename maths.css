@@ -1,0 +1,42 @@
+header{
+    width: 100%;
+    color: white;
+    text-align: center;
+
+}
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    color: black;
+    padding: 10px;
+}
+
+nav{
+    width: 100%;
+    background: darkolivegreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+nav ul li a:hover{
+    background: orange;
+    color: black;
+}
+table{
+    border-collapse: collapse;
+    background-color: darkolivegreen;
+
+}
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid black;
+
+}
+th{
+    color: darkgray;
+    background-color: white;
+}
