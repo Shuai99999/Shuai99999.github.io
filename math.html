@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- Head and stylesheets-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,9 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="maths.css">
 </head>
+<!--Body of the page, includes links to the respective section of the page-->
 <body>
+<!--Includes title of the page with a navigation bar-->
     <header>
         <h1>General Mathematics</h1>
         <nav>
@@ -19,19 +22,40 @@
             </ul>
         </nav>
     </header>
+    <!--Main part of the page, includes introduction,a math equation, visuals as well as a table -->
     <main>
+    <!--This section inludes introduction-->
         <section class="article-section" id="introduction-id" >
             <h2>Introduction</h2>
             <p>This page covers key concepts in <strong>General Mathematics</strong>.</p>
             <p>General Mathematics plays a crucial role in computer programming, as many programming concepts are rooted in mathematical principles. From basic arithmetic to advanced algorithms, mathematics helps programmers write efficient and optimized coding</p>
             <p>In computer programming, mathematics is deeply integrated into algorithm development, data structures, and computational logic. Arithmetic operations are used for calculations, while algebra helps in defining expressions and variables. Geometry plays a crucial role in computer graphics and game development, while statistics and probability are widely used in artificial intelligence, data analysis, and machine learning. Additionally, logic and set theory form the basis of database management and decision-making in programming.</p>
         </section>
+        <!-- 1 undiscussed element in class-->
+        <!--A math equation -->
+        <section>
+             <math>
+        <mfrac>
+            <mn>1</mn>
+            <mn>2</mn>
+        </mfrac>
+        <mo>&#x2217;</mo> <!-- Multiplication symbol -->
+        <msup>
+            <mi>x</mi>
+            <mn>2</mn>
+        </msup>
+        <mo>+</mo>
+        <mn>5</mn>
+    </math>
+        </section>
+    <!--This is section includes an image about the page-->
         <section class="image-section" id="visual-id">
             <h2>Visual Representation</h2>
             <img src="assets/images/math.png" alt="Mathematics in Programming">
         </section>
         <section class="table-section" id="table-id">
-            <h3>Some data about General Mathematics from the web</h3>
+            <h2>Some data about General Mathematics from the web</h2>
+    <!--This is a table-->
             <table>
                 <tr>
                     <th>Mathematical Concept</th>
