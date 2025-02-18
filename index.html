@@ -60,20 +60,25 @@
         </p>
       </section>
       <!-- Elements not covered in the class. -->
-      <div>
-        <label for="start">Start date:</label>
-        <input
-          type="date"
-          id="start"
-          name="trip-start"
-          value="2025-02-11"
-          min="1970-01-01"
-          max="2026-12-31"
-        />
-      </div>
+      <section>
+        <h2>This is a date selector and a clock</h2>
+        <div>
+          <label for="start">Today is:</label>
+          <input
+            type="date"
+            id="start"
+            name="trip-start"
+            value=""
+            min="1970-01-01"
+            max="2026-12-31"
+          />
+        </div>
+        <p id="currentDateTime"></p>
+      </section>
     </main>
     <footer>
       <p>&copy; 2025 Course Encyclopedia | All Rights Reserved</p>
     </footer>
+    <script src="display-datetime.js"></script>
   </body>
 </html>
