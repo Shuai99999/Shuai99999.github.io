@@ -22,9 +22,9 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="grid-container">
       <section class="article-section" id="article-id">
-        <h1>Introduction</h1>
+        <h2>Introduction</h2>
         <p>
           This page covers key concepts in <strong>Python Programming</strong>.
         </p>
@@ -58,7 +58,7 @@
           <span class="code-comment"># Python 3: Fibonacci series up to n</span>
             >>> def fib(n):
             >>>   a, b = 0, 1
-            >>>   while a < n:
+            >>>   while a &lt; n:
             >>>     print(a, end=' ')
             >>>     a, b = b, a+b
             >>>   print()
@@ -72,6 +72,7 @@
         <img src="assets/images/python.jpg" alt="Python Programming" />
       </section>
       <section class="table-section" id="table-id">
+        <h2>Python history</h2>
         <table>
           <caption>
             <strong> Python version history </strong>
@@ -84,38 +85,53 @@
               <td>GPL Compatible</td>
             </tr>
           </thead>
-          <tr>
-            <td>0.9.0-1.2</td>
-            <td>1991-1995</td>
-            <td>CWI</td>
-            <td>Y</td>
-          </tr>
-          <tr>
-            <td>1.3-1.5.2</td>
-            <td>1995-1999</td>
-            <td>CNRI</td>
-            <td>Y</td>
-          </tr>
-          <tr>
-            <td>1.6</td>
-            <td>2000</td>
-            <td>CNRI</td>
-            <td>N</td>
-          </tr>
-          <tr>
-            <td>2.0</td>
-            <td>2000</td>
-            <td>BeOpen.com</td>
-            <td>N</td>
-          </tr>
-          <tr>
-            <td>3.0</td>
-            <td>2008 until now</td>
-            <td>PSF</td>
-            <td>Y</td>
-          </tr>
+          <tbody>
+            <tr>
+              <td>0.9.0-1.2</td>
+              <td>1991-1995</td>
+              <td>CWI</td>
+              <td>Y</td>
+            </tr>
+            <tr>
+              <td>1.3-1.5.2</td>
+              <td>1995-1999</td>
+              <td>CNRI</td>
+              <td>Y</td>
+            </tr>
+            <tr>
+              <td>1.6</td>
+              <td>2000</td>
+              <td>CNRI</td>
+              <td>N</td>
+            </tr>
+            <tr>
+              <td>2.0</td>
+              <td>2000</td>
+              <td>BeOpen.com</td>
+              <td>N</td>
+            </tr>
+            <tr>
+              <td>3.0</td>
+              <td>2008 until now</td>
+              <td>PSF</td>
+              <td>Y</td>
+            </tr>
+          </tbody>
         </table>
       </section>
+      <img
+        src="assets/images/OnlineGambling.png"
+        alt="Gaming Monitor"
+        class="float-img"
+      />
+      <aside class="sidebar">
+        <div>
+          <p class="sidebar-text">This is a sidebar.</p>
+          <p class="sidebar-text">This is sidebar content.</p>
+          <p class="sidebar-text">This is sidebar content.</p>
+          <p class="sidebar-text">This is sidebar content.</p>
+        </div>
+      </aside>
     </main>
     <footer>
       <p>
