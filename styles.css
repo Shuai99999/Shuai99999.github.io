@@ -52,6 +52,10 @@ nav ul li a {
   transition: background 0.3s ease;
 }
 
+nav ul li a:hover {
+  background: #003877;
+}
+
 /* Image Section */
 .image-section {
   text-align: center;
@@ -66,6 +70,29 @@ nav ul li a {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* Grid Layout for Main Content */
+.grid-main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.full-width {
+  grid-column: 1 / -1;
+}
+
+.grid-item {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
 /* Footer */
 footer {
   text-align: center;
@@ -75,4 +102,25 @@ footer {
   margin-top: 2em;
   width: 100%;
   font-size: 1em;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .grid-main {
+      grid-template-columns: 1fr;
+  }
+
+  .full-width,
+  .grid-item {
+      grid-column: 1;
+  }
+
+  nav ul {
+      flex-direction: column;
+  }
+
+  nav ul li a {
+      width: 90%;
+      text-align: center;
+  }
 }
