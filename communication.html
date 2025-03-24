@@ -1,105 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Communication in the Workplace</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="communication.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Communication in the Workplace</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="communication.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>Communication in the Workplace</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Back to Main Page</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <nav>
-        <ul>
-            <li><a href="#introduction">Introduction</a></li>
-            <li><a href="#importance">Importance of Workplace Communication</a></li>
-            <li><a href="#types">Types of Workplace Communication</a></li>
-            <li><a href="#visual">Visual Representation</a></li>
-        </ul>
+  <header>
+    <h1><i class="fas fa-comments"></i> Communication in the Workplace</h1>
+    <nav class="header-nav">
+      <a href="index.html" class="nav-button">Back to Main Page</a>
+      <a href="#introduction" class="nav-button">Introduction</a>
+      <a href="#importance" class="nav-button">Importance</a>
+      <a href="#types" class="nav-button">Types</a>
+      <a href="#visual" class="nav-button">Visual</a>
     </nav>
+  </header>
 
-    <main>
-        <article id="introduction">
-            <h2>Introduction</h2>
-            <p>Effective communication in the workplace is essential for productivity, teamwork, and a positive work environment.</p>
-            <p>It ensures that information is conveyed clearly and that employees understand their roles, responsibilities, and expectations.</p>
-        </article>
+  <main class="section-grid">
+    <article id="introduction" class="section-card">
+      <h2>Introduction</h2>
+      <img src="https://th.bing.com/th/id/OIP.JAxK-G5sT6kSYY2hHneNaQHaFH?rs=1&pid=ImgDetMain"
+           alt="Importance of communicating" class="float-right">
+      <p>Effective communication in the workplace is essential for productivity, teamwork, and a positive work environment.</p>
+      <p class="multi-column">
+        It ensures that information is conveyed clearly and that employees understand their roles, responsibilities, and expectations.
+        Miscommunication can lead to errors, conflicts, and reduced morale. By fostering open dialogue and active listening, organizations
+        can build trust and collaboration among team members. This leads to stronger relationships, more successful projects, and a culture
+        of transparency and respect across the organization.
+      </p>
+    </article>
 
-        <section id="importance">
-            <h2>Importance of Workplace Communication</h2>
-            <p>Communication plays a crucial role in maintaining a productive workplace. Some key benefits include:</p>
-            <ul>
-                <li>Enhances teamwork and collaboration.</li>
-                <li>Reduces misunderstandings and conflicts.</li>
-                <li>Boosts employee engagement and morale.</li>
-                <li>Ensures clarity in tasks and objectives.</li>
-                <li>Improves efficiency and productivity.</li>
-            </ul>
-        </section>
+    <section id="importance" class="section-card grid-layout">
+      <div>
+        <h2>Importance of Workplace Communication</h2>
+        <ul>
+          <li>Enhances teamwork and collaboration.</li>
+          <li>Reduces misunderstandings and conflicts.</li>
+          <li>Boosts employee engagement and morale.</li>
+          <li>Ensures clarity in tasks and objectives.</li>
+          <li>Improves efficiency and productivity.</li>
+        </ul>
+      </div>
+      <div>
+        <img src="https://zdblogs.zohowebstatic.com/sites/workplace/articles/files/workplace-communication.png"
+             alt="Importance of communicating" style="width: 100%; border-radius: 8px;">
+      </div>
+    </section>
 
-        <section id="types">
-            <h2>Types of Workplace Communication</h2>
-            <p>Different forms of communication help employees share ideas, solve problems, and maintain relationships. Below is a breakdown:</p>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Type</th>
-                        <th>Description</th>
-                        <th>Example</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Verbal Communication</td>
-                        <td>Spoken communication, either face-to-face or over the phone.</td>
-                        <td>Team meetings, presentations.</td>
-                    </tr>
-                    <tr>
-                        <td>Non-Verbal Communication</td>
-                        <td>Body language, gestures, and facial expressions.</td>
-                        <td>Eye contact, hand gestures.</td>
-                    </tr>
-                    <tr>
-                        <td>Written Communication</td>
-                        <td>Communication through text.</td>
-                        <td>Emails, reports, memos.</td>
-                    </tr>
-                    <tr>
-                        <td>Visual Communication</td>
-                        <td>Use of images and diagrams to convey ideas.</td>
-                        <td>Charts, infographics, slides.</td>
-                    </tr>
-                    <tr>
-                        <td>Formal Communication</td>
-                        <td>Structured communication following business protocols.</td>
-                        <td>Official emails, policy documents.</td>
-                    </tr>
-                    <tr>
-                        <td>Informal Communication</td>
-                        <td>Casual conversations between colleagues.</td>
-                        <td>Chat messages, coffee break discussions.</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+    <section id="types" class="section-card">
+      <h2>Types of Workplace Communication</h2>
+      <p>Different forms of communication help employees share ideas, solve problems, and maintain relationships. Below is a breakdown:</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Type</th>
+            <th>Description</th>
+            <th>Example</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Verbal Communication</td><td>Spoken communication, either face-to-face or over the phone.</td><td>Team meetings, presentations.</td></tr>
+          <tr><td>Non-Verbal Communication</td><td>Body language, gestures, and facial expressions.</td><td>Eye contact, hand gestures.</td></tr>
+          <tr><td>Written Communication</td><td>Communication through text.</td><td>Emails, reports, memos.</td></tr>
+          <tr><td>Visual Communication</td><td>Use of images and diagrams to convey ideas.</td><td>Charts, infographics, slides.</td></tr>
+          <tr><td>Formal Communication</td><td>Structured communication following business protocols.</td><td>Official emails, policy documents.</td></tr>
+          <tr><td>Informal Communication</td><td>Casual conversations between colleagues.</td><td>Chat messages, coffee break discussions.</td></tr>
+        </tbody>
+      </table>
+    </section>
 
-        <section id="visual">
-            <h2>Visual Representation</h2>
-            <img src="assets/images/communication_workplace.png" alt="Illustration of workplace communication">
-        </section>
-    </main>
+    <section id="visual" class="section-card">
+      <h2>Visual Representation</h2>
+      <div style="text-align: center;">
+        <img src="assets/images/communication_workplace.png"
+             alt="Workplace communication diagram" style="max-width: 100%; border-radius: 10px;">
+      </div>
+    </section>
+  </main>
 
-    <footer>
-        <p>&copy; 2025 Course Encyclopedia | Communication in the Workplace | Bright Edom | Student ID 000369548</p>
-    </footer>
+  <footer>
+    <p>&copy; 2025 Course Encyclopedia | Bright Edom | Student ID 000369548</p>
+  </footer>
 </body>
 </html>
