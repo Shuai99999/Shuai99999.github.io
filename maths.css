@@ -81,7 +81,7 @@ table{
     grid-template-columns: 1fr 2fr 3fr;
     grid-template-rows: repeat(10, 1fr);
     border-collapse: collapse;
-    background-color: rgb(29, 58, 49);
+
 
 }
 th, td {
@@ -89,6 +89,7 @@ th, td {
     text-align: center;
     border: 1px solid black;
     color: white;
+    background-color: rgb(29, 58, 49);
 
 }
 th{
@@ -100,7 +101,7 @@ th{
     nav ul{
         flex-direction: column;
     }
-    .multicol-section{
+    .multicol-section .column-container{
         column-count: 1;
     }
     table{
