@@ -1,3 +1,4 @@
+/* header styling */
 header{
     position: sticky;
     width: 100%;
@@ -6,6 +7,7 @@ header{
     background-color:#036346c9 ;
 
 }
+/* body styling, includes flex box */
 body{
     display:flex;
     justify-content: center;
@@ -14,21 +16,24 @@ body{
     color: black;
     padding:10px;
 }
-
+/* nav bar stylings, also includes flex box */
 nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
     
 }
+/* hover effect on the links */
 nav ul li a:hover{
     background: orange;
     color: black;
 }
+/* example of multicol layout */
 .multicol-section .column-container {
     column-count: 2;
     column-gap: 2px;
 }
+/* equation styling */
 .equation-section{
     display: flex;
     justify-content: center;
@@ -36,6 +41,7 @@ nav ul li a:hover{
     flex-wrap: wrap;
 
 }
+/* float image with its dimensions */
 .float-img {
     position: fixed;
     top: 10px;
@@ -45,11 +51,12 @@ nav ul li a:hover{
     height: auto;
     border-radius: 8px;
   }
-
+/* visual representation example  */
 .image-section {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
   }
+/* table with its css grid layout */
 table {
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
@@ -74,7 +81,7 @@ th {
     color: black;
 }
 
-
+/* responsive subpage and stylings */
 @media(max-width:960px) {
     nav ul{
         flex-direction: column;
