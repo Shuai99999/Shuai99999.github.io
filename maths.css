@@ -1,49 +1,9 @@
-/* header{
-    width: 100%;
-    color: white;
-    text-align: center;
-
-}
-body{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    color: black;
-    padding: 10px;
-}
-
-nav{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-nav ul li a:hover{
-    background: orange;
-    color: black;
-}
-table{
-    border-collapse: collapse;
-    background-color: beige;
-
-}
-th, td {
-    padding: 10px;
-    text-align: center;
-    border: 1px solid black;
-
-}
-th{
-    color: black;
-    background-color: white;
-} */
 header{
     position: sticky;
     width: 100%;
     color: white;
     text-align: center;
+    background-color:#036346c9 ;
 
 }
 body{
@@ -76,26 +36,39 @@ nav ul li a:hover{
     flex-wrap: wrap;
 
 }
-/* Use grid but keep rows aligned properly */
+.float-img {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    margin-right: 15px;
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+  }
+
+.image-section {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
 table {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    grid-template-columns: repeat(3, 1fr); 
     border-collapse: collapse;
     width: 100%;
+
 }
 
-/* Fix row behavior */
+
 thead, tbody, tr {
-    display: contents; /* Makes sure rows behave like real table rows */
-}
+    display: contents; 
 
-/* Apply background colors only where needed */
+}
 th, td {
     padding: 8px;
-    border: 1px solid white;
+    border: 1px solid black;
     text-align: center;
     color: white;
-    background-color: #1D3A31; /* Only colors actual cells */
+    background-color: #1D3A31; 
 }
 
 th {
@@ -104,7 +77,6 @@ th {
 }
 
 
-}
 @media(max-width:960px) {
     nav ul{
         flex-direction: column;
@@ -115,5 +87,9 @@ th {
     table{
         grid-template-columns: 1fr;
     }
-    
+    .float-img {
+        float: none;
+        width: 90px;
+        margin: 1rem 0;
+    }
 }
