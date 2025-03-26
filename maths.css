@@ -76,25 +76,33 @@ nav ul li a:hover{
     flex-wrap: wrap;
 
 }
-table{
+/* Use grid but keep rows aligned properly */
+table {
     display: grid;
-    grid-template-columns: 1fr 2fr 3fr;
-    grid-template-rows: repeat(10, 1fr);
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
     border-collapse: collapse;
-
-
+    width: 100%;
 }
+
+/* Fix row behavior */
+thead, tbody, tr {
+    display: contents; /* Makes sure rows behave like real table rows */
+}
+
+/* Apply background colors only where needed */
 th, td {
-    padding: 10px;
+    padding: 8px;
+    border: 1px solid white;
     text-align: center;
-    border: 1px solid black;
     color: white;
-    background-color: rgb(29, 58, 49);
-
+    background-color: #1D3A31; /* Only colors actual cells */
 }
-th{
-    color: black;
+
+th {
     background-color: white;
+    color: black;
+}
+
 
 }
 @media(max-width:960px) {
