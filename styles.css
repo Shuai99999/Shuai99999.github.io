@@ -70,6 +70,7 @@ nav ul li a:hover {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+
 /* Grid Layout for Main Content */
 .grid-main {
   display: grid;
@@ -123,4 +124,9 @@ footer {
       width: 90%;
       text-align: center;
   }
+  .float-img {
+        float: none;
+        width: 90px;
+        margin: 1rem 0;
+    }
 }
