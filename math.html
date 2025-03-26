@@ -25,15 +25,17 @@
     <!--Main part of the page, includes introduction,a math equation, visuals as well as a table -->
     <main>
     <!--This section inludes introduction-->
-        <section class="article-section" id="introduction-id" >
+        <section class="article-section multicol-section" id="introduction-id" >
             <h2>Introduction</h2>
-            <p>This page covers key concepts in <strong>General Mathematics</strong>.</p>
-            <p>General Mathematics plays a crucial role in computer programming, as many programming concepts are rooted in mathematical principles. From basic arithmetic to advanced algorithms, mathematics helps programmers write efficient and optimized coding</p>
-            <p>In computer programming, mathematics is deeply integrated into algorithm development, data structures, and computational logic. Arithmetic operations are used for calculations, while algebra helps in defining expressions and variables. Geometry plays a crucial role in computer graphics and game development, while statistics and probability are widely used in artificial intelligence, data analysis, and machine learning. Additionally, logic and set theory form the basis of database management and decision-making in programming.</p>
+            <div class="column-container">
+                <p>This page covers key concepts in <strong>General Mathematics</strong>.</p>
+                <p>General Mathematics plays a crucial role in computer programming, as many programming concepts are rooted in mathematical principles. From basic arithmetic to advanced algorithms, mathematics helps programmers write efficient and optimized coding</p>
+                <p>In computer programming, mathematics is deeply integrated into algorithm development, data structures, and computational logic. Arithmetic operations are used for calculations, while algebra helps in defining expressions and variables. Geometry plays a crucial role in computer graphics and game development, while statistics and probability are widely used in artificial intelligence, data analysis, and machine learning. Additionally, logic and set theory form the basis of database management and decision-making in programming.</p>
+            </div>
         </section>
         <!-- 1 undiscussed element in class-->
         <!--A math equation -->
-        <section>
+        <section class="equation-section"><h2>Equation</h2>
              <math>
         <mfrac>
             <mn>1</mn>
@@ -53,8 +55,13 @@
             <h2>Visual Representation</h2>
             <img src="assets/images/math.png" alt="Mathematics in Programming">
         </section>
-        <section class="table-section" id="table-id">
+        <section class="float-image" id ="float-id">
+            <img src ="assets/images/calculator-image.jpg" alt="calculator">
+
+        </section>
+        <section class="table-section grid-section" id="table-id">
             <h2>Some data about General Mathematics from the web</h2>
+            <div class="table-container">
     <!--This is a table-->
             <table>
                 <tr>
@@ -110,6 +117,7 @@
                     <td>Essential for digital circuits, cryptography, and low-level programming.</td>
                 </tr>
             </table>
+            </div>
         </section>
 
     </main>

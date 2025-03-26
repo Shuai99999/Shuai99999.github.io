@@ -1,4 +1,4 @@
-header{
+/* header{
     width: 100%;
     color: white;
     text-align: center;
@@ -38,4 +38,74 @@ th, td {
 th{
     color: black;
     background-color: white;
+} */
+header{
+    position: sticky;
+    width: 100%;
+    color: white;
+    text-align: center;
+    background-color:black ;
+
+}
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: black;
+    padding:10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+nav ul li a:hover{
+    background: orange;
+    color: black;
+}
+.multicol-section .column-container {
+    column-count: 2;
+    column-gap: 2px;
+}
+.equation-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+table{
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr;
+    grid-template-rows: repeat(10, 1fr);
+    border-collapse: collapse;
+    background-color: rgb(29, 58, 49);
+
+}
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid black;
+    color: white;
+
+}
+th{
+    color: black;
+    background-color: white;
+
+}
+@media(max-width:960px) {
+    nav ul{
+        flex-direction: column;
+    }
+    .multicol-section{
+        column-count: 1;
+    }
+    table{
+        grid-template-columns: 1fr;
+    }
+    
 }
