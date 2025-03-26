@@ -58,11 +58,6 @@ table {
 
 }
 
-
-thead, tbody, tr {
-    display: contents; 
-
-}
 th, td {
     padding: 8px;
     border: 1px solid black;
