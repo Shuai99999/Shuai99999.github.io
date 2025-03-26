@@ -57,6 +57,9 @@ table {
     width: 100%;
 
 }
+thead, tbody, tr {
+    display: contents; 
+}
 
 th, td {
     padding: 8px;
