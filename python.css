@@ -100,6 +100,8 @@ table {
     width: 60%;
     margin: auto;
   }
+
+  /* Here is the flex layout when triggering media query */
   .grid-container {
     display: flex;
     flex-direction: column;
@@ -110,8 +112,14 @@ table {
     margin: 0.5em 0;
   }
 
+  nav ul {
+    flex-direction: column;
+  }
+
   nav ul li a {
-    font-size: 0.6em;
+    /* font-size: 0.6em; */
+    width: 90%;
+    text-align: center;
   }
 
   .article-section {

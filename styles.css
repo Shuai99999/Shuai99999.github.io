@@ -70,16 +70,14 @@ nav ul li a:hover {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 .float-img {
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    margin-right: 15px;
-    width: 200px;
-    height: auto;
-    border-radius: 8px;
-  }
-
-
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  margin-right: 15px;
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+}
 
 /* Grid Layout for Main Content */
 .grid-main {
@@ -101,7 +99,7 @@ nav ul li a:hover {
   background: white;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Footer */
@@ -116,27 +114,28 @@ footer {
 }
 
 /* Responsive layout */
-@media (max-width: 768px) {
+@media screen and (width < 960px) {
   .grid-main {
-      grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 
   .full-width,
   .grid-item {
-      grid-column: 1;
+    grid-column: 1;
   }
 
   nav ul {
-      flex-direction: column;
+    flex-direction: column;
   }
 
   nav ul li a {
-      width: 90%;
-      text-align: center;
+    width: 90%;
+    text-align: center;
   }
+
   .float-img {
-        float: none;
-        width: 90px;
-        margin: 1rem 0;
-    }
+    float: none;
+    width: 90px;
+    margin: 1rem 0;
+  }
 }
