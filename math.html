@@ -25,15 +25,18 @@
     <!--Main part of the page, includes introduction,a math equation, visuals as well as a table -->
     <main>
     <!--This section inludes introduction-->
-        <section class="article-section" id="introduction-id" >
+        <section class="article-section multicol-section" id="introduction-id" >
             <h2>Introduction</h2>
+            <div class="column-container">
             <p>This page covers key concepts in <strong>General Mathematics</strong>.</p>
             <p>General Mathematics plays a crucial role in computer programming, as many programming concepts are rooted in mathematical principles. From basic arithmetic to advanced algorithms, mathematics helps programmers write efficient and optimized coding</p>
             <p>In computer programming, mathematics is deeply integrated into algorithm development, data structures, and computational logic. Arithmetic operations are used for calculations, while algebra helps in defining expressions and variables. Geometry plays a crucial role in computer graphics and game development, while statistics and probability are widely used in artificial intelligence, data analysis, and machine learning. Additionally, logic and set theory form the basis of database management and decision-making in programming.</p>
+            </div>
         </section>
+       
         <!-- 1 undiscussed element in class-->
         <!--A math equation -->
-        <section>
+        <section><h5>Equation:</h5>
              <math>
         <mfrac>
             <mn>1</mn>
@@ -48,7 +51,7 @@
         <mn>5</mn>
     </math>
         </section>
-    <!--This is section includes an image about the page-->
+    <!--This section includes an image about the page-->
         <section class="image-section" id="visual-id">
             <h2>Visual Representation</h2>
             <img src="assets/images/math.png" alt="Mathematics in Programming">
@@ -111,8 +114,12 @@
                 </tr>
             </table>
         </section>
-
+<!--         this is the float image used for the page  -->
+        <section class="float-section">
+            <img src="assets/images/calculator-image.jpg" alt="Calculator floating example" class="float-img">
+        </section>
     </main>
+<!--     footer for the page  -->
     <footer>
         <p>&copy; 2025 Course Encyclopedia | General Mathematics | Abdallah Syed | ID:000376177 </p>
     </footer>
