@@ -1,0 +1,34 @@
+import "./App.css";
+import React, { useState } from "react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Github, Mail, ChevronDown, ChevronUp } from "lucide-react";
+import HeaderCard from "./components/HeaderCard";
+import CertificationsProjectsCard from "./components/CertificationsProjectsCard";
+import ExperienceCard from "./components/ExperienceCard";
+import ContactCard from "./components/ContactCard";
+import SidebarProfile from "./components/SidebarProfile";
+
+export default function App() {
+  const [showExperience, setShowExperience] = useState(false);
+  const toggleExperience = () => setShowExperience(!showExperience);
+
+  return (
+    <main className="min-h-screen bg-[#F0F9FF] text-gray-900 p-6 md:p-12">
+      <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 items-start">
+        <div className="md:col-span-2 space-y-6">
+          <HeaderCard />
+          <CertificationsProjectsCard />
+          <ExperienceCard
+            showExperience={showExperience}
+            toggleExperience={toggleExperience}
+            ChevronUp={ChevronUp}
+            ChevronDown={ChevronDown}
+          />
+          <ContactCard />
+        </div>
+        <SidebarProfile />
+      </div>
+    </main>
+  );
+}
