@@ -16,6 +16,7 @@ module.exports = {
       },
       fontFamily: {
         sans: ["Inter", ...fontFamily.sans],
+        cyber: ['"Orbitron"', "sans-serif"],
       },
     },
   },

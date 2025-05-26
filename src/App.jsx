@@ -1,33 +1,44 @@
+// App.jsx
 import "./App.css";
-import React, { useState } from "react";
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Github, Mail, ChevronDown, ChevronUp } from "lucide-react";
-import HeaderCard from "./components/HeaderCard";
-import CertificationsProjectsCard from "./components/CertificationsProjectsCard";
-import ExperienceCard from "./components/ExperienceCard";
-import ContactCard from "./components/ContactCard";
-import SidebarProfile from "./components/SidebarProfile";
+import AboutSection from "./components/AboutSection";
+import CodeSection from "./components/CodeSection";
+import GameSection from "./components/GameSection";
+import DataSection from "./components/DataSection";
 
 export default function App() {
-  const [showExperience, setShowExperience] = useState(false);
-  const toggleExperience = () => setShowExperience(!showExperience);
-
   return (
-    <main className="min-h-screen bg-[#F0F9FF] text-gray-900 p-6 md:p-12">
-      <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 items-start">
-        <div className="md:col-span-2 space-y-6">
-          <HeaderCard />
-          <CertificationsProjectsCard />
-          <ExperienceCard
-            showExperience={showExperience}
-            toggleExperience={toggleExperience}
-            ChevronUp={ChevronUp}
-            ChevronDown={ChevronDown}
-          />
-          <ContactCard />
-        </div>
-        <SidebarProfile />
+    <main className="min-h-screen bg-gradient-to-b from-gray-100 to-gray-300 text-gray-900">
+      <nav className='fixed top-0 left-0 right-0 z-50 bg-gradient-to-b from-gray-100 to-gray-300 px-6 py-3 flex gap-6 justify-center text-lg font-\[\"Orbitron\",_sans-serif\] text-cyan-700 font-bold'>
+        <a href="#about" className="hover:text-cyan-900 transition-colors">
+          About
+        </a>
+        <a href="#code" className="hover:text-cyan-900 transition-colors">
+          Code
+        </a>
+        <a href="#games" className="hover:text-cyan-900 transition-colors">
+          Games
+        </a>
+        <a href="#analytics" className="hover:text-cyan-900 transition-colors">
+          Analytics
+        </a>
+      </nav>
+
+      <div className="pt-20 px-6 md:px-12 max-w-6xl mx-auto space-y-12">
+        <section id="about">
+          <AboutSection />
+        </section>
+
+        <section id="code">
+          <CodeSection />
+        </section>
+
+        <section id="games">
+          <GameSection />
+        </section>
+
+        <section id="analytics">
+          <DataSection />
+        </section>
       </div>
     </main>
   );
