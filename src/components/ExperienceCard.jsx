@@ -21,13 +21,6 @@ export default function ExperienceCard({
         {showExperience && (
           <div className="text-sm text-gray-700 space-y-6">
             <div>
-              <p>
-                From Jan 2025, I came to Canada as an international student in
-                Alberta. I am eligible for part-time work during semesters and
-                full-time work in summer breaks. I will graduate in early 2027.
-              </p>
-            </div>
-            <div>
               <h3 className="text-lg font-bold text-cyan-700">
                 RRS Supply Chain
               </h3>

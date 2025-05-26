@@ -17,6 +17,11 @@ export default function HeaderCard() {
             15+ years in database administration, IT infrastructure, and
             enterprise systems.
           </p>
+          <p>
+            From Jan 2025, I came to Canada as an international student in
+            Alberta. I am eligible for part-time work during semesters and
+            full-time work in summer breaks. I will graduate in early 2027.
+          </p>
         </section>
       </CardContent>
     </Card>
