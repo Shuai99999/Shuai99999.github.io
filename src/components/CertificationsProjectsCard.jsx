@@ -30,7 +30,7 @@ export default function CertificationsProjectsCard() {
             <strong>Period:</strong> Feb.2020-Dec.2024
             <br />
             Description: Converted infra from private cloud to x86 servers,
-            achieving over 40% cost savings (~¥23M RMB). Led migration and
+            achieving over 40% cost savings (~$3.2M USD). Led migration and
             capacity planning.
           </p>
         </div>

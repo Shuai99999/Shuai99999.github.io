@@ -27,6 +27,14 @@ export default function ExperienceCard({
               <p className="italic">
                 Cloud Computing Team Leader | Feb.2017 - Jan.2025
               </p>
+              <p className="text-gray-700 text-sm leading-relaxed mb-2">
+                RRS Supply Chain is a subsidiary of Haier Corporation and
+                operates a multi-billion RMB logistics business serving both
+                Haier and other major manufacturers across China. At RRS, I led
+                a cross-functional team of application, infrastructure, and
+                systems engineers to build and deliver a large-scale logistics
+                application supporting nationwide operations.
+              </p>
               <ul className="list-disc list-inside mt-2 space-y-1">
                 <li>Designed and built a data center from scratch.</li>
                 <li>Managed IT asset lifecycle, capacity, and performance.</li>
