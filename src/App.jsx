@@ -26,10 +26,6 @@ export default function App() {
         <section id="analytics">
           <DataSection />
         </section>
-
-        <section className="h-[200vh] bg-gradient-to-b from-blue-100 to-pink-100 p-10">
-          <p className="text-2xl">Scroll down and see nav blur background!</p>
-        </section>
       </div>
     </main>
   );
