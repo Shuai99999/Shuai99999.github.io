@@ -2,8 +2,14 @@ import { User, Bug, Gamepad2, ChartNoAxesColumnIncreasing } from "lucide-react";
 
 export default function NavSection() {
   return (
-    // <nav className='fixed top-0 left-0 right-0 z-50 bg-gradient-to-b from-gray-100 to-gray-300 px-6 py-3 flex gap-20 justify-center text-lg font-\[\"Orbitron\",_sans-serif\] text-cyan-700 font-bold'>
-    <nav className='fixed top-0 left-0 right-0 z-50 bg-white/30 backdrop-blur-md px-6 py-3 flex gap-20 justify-center text-lg font-\[\"Orbitron\",_sans-serif\] text-cyan-700 font-bold'>
+    <nav
+      className='fixed top-0 left-0 right-0 z-50 px-6 py-3 flex gap-20 justify-center text-lg font-["Orbitron",sans-serif] text-cyan-700 font-bold border-b border-white/40 shadow-md'
+      style={{
+        backgroundColor: "rgba(255, 255, 255, 0.4)",
+        backdropFilter: "blur(16px)",
+        WebkitBackdropFilter: "blur(16px)",
+      }}
+    >
       <a href="#about" className="flex items-center gap-2 whitespace-nowrap">
         <User size={20} /> About
       </a>

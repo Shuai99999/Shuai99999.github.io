@@ -2,7 +2,6 @@
 import "./App.css";
 import NavSection from "./components/NavSection";
 import AboutSection from "./components/AboutSection";
-import CodeSection from "./components/CodeSection";
 import GameSection from "./components/GameSection";
 import DataSection from "./components/DataSection";
 import TestSection from "./components/TestSection.jsx";
@@ -16,20 +15,12 @@ export default function App() {
           <AboutSection />
         </section>
 
-        <section id="code">
-          <CodeSection />
-        </section>
-
         <section id="games">
           <GameSection />
         </section>
 
         <section id="analytics">
           <DataSection />
-        </section>
-
-        <section id="analytics">
-          <TestSection />
         </section>
       </div>
     </main>

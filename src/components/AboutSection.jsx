@@ -5,7 +5,7 @@ import { Github, Mail, ChevronDown, ChevronUp } from "lucide-react";
 import HeaderCard from "./HeaderCard";
 import CertificationsProjectsCard from "./CertificationsProjectsCard";
 import ExperienceCard from "./ExperienceCard";
-import ContactCard from "./ContactCard";
+import CodeSection from "./CodeSection";
 import SidebarProfile from "./SidebarProfile";
 
 export default function App() {
@@ -24,7 +24,9 @@ export default function App() {
             ChevronUp={ChevronUp}
             ChevronDown={ChevronDown}
           />
-          <ContactCard />
+          <section id="code">
+            <CodeSection />
+          </section>
         </div>
         <SidebarProfile />
       </div>

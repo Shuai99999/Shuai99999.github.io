@@ -16,13 +16,16 @@ export default function SidebarProfile() {
           Shuai Gao
         </h3>
         <p className="sidebar-intro text-sky-700">
-          Hi, I’m a cloud infrastructure operator and certified database expert
-          with over 15 years of hands-on experience. Whether it's Oracle, MySQL,
-          or full-stack DevOps, I love solving complex IT problems and building
-          scalable systems. When I’m not working, I’m probably exploring new
-          game worlds, hitting the gym (sometimes), or taking my family on
-          little adventures around town. Life’s all about balance — tech by day,
-          fun and family by heart!
+          Hi, I’m a full stack and mobile developer with a strong backend
+          foundation and over 15 years of experience in enterprise systems. I
+          specialize in building scalable web and cross-platform applications
+          using Node.js, Express, React, and React Native. With a deep
+          understanding of databases and production environments, I enjoy
+          designing reliable systems that perform well under real-world
+          constraints. When I’m not coding, I’m probably exploring new game
+          worlds, hitting the gym (sometimes), or spending quality time with my
+          family. For me, it’s all about balance — building great software by
+          day, enjoying life by heart.
         </p>
       </div>
       <div className="p-4 border-t border-sky-100">

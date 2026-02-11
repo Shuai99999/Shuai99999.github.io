@@ -3,35 +3,90 @@ import React from "react";
 import Skill from "./Skill";
 
 const skills = [
+  // Backend
   {
-    skill: "DBA",
+    skill: "Node.js",
     level: "advanced",
-    color: "#2662EA",
+    color: "#3C873A",
   },
   {
-    skill: "Cloud Computing",
+    skill: "Express.js",
     level: "advanced",
-    color: "#EFD81D",
+    color: "#000000",
   },
-  {
-    skill: "Dev Ops",
-    level: "intermediate",
-    color: "#C3DCAF",
-  },
-  {
-    skill: "Data Science",
-    level: "intermediate",
-    color: "#E84F33",
-  },
-  {
-    skill: "HTML+CSS",
-    level: "beginner",
-    color: "#60DAFB",
-  },
+
+  // Frontend
   {
     skill: "React",
-    level: "beginner",
-    color: "#FF3B00",
+    level: "intermediate",
+    color: "#61DBFB",
+  },
+  {
+    skill: "JavaScript (ES6+)",
+    level: "advanced",
+    color: "#F7DF1E",
+  },
+  {
+    skill: "HTML5 + CSS3",
+    level: "intermediate",
+    color: "#E34F26",
+  },
+
+  // Mobile
+  {
+    skill: "React Native (Expo)",
+    level: "intermediate",
+    color: "#4630EB",
+  },
+
+  // Database
+  {
+    skill: "MongoDB",
+    level: "advanced",
+    color: "#4DB33D",
+  },
+  {
+    skill: "PostgreSQL",
+    level: "advanced",
+    color: "#336791",
+  },
+
+  // BaaS
+  {
+    skill: "Supabase",
+    level: "intermediate",
+    color: "#3ECF8E",
+  },
+  {
+    skill: "Appwrite",
+    level: "intermediate",
+    color: "#F02E65",
+  },
+
+  // DevOps & Deployment
+  {
+    skill: "Docker",
+    level: "intermediate",
+    color: "#2496ED",
+  },
+  {
+    skill: "Git & GitHub",
+    level: "advanced",
+    color: "#181717",
+  },
+
+  // Cloud
+  {
+    skill: "Cloud Deployment",
+    level: "intermediate",
+    color: "#FF9900",
+  },
+
+  // Architecture
+  {
+    skill: "RESTful API Design",
+    level: "advanced",
+    color: "#6C63FF",
   },
 ];
 

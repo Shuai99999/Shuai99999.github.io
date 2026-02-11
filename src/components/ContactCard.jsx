@@ -2,7 +2,6 @@
 import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Github, Mail } from "lucide-react";
 
 export default function ContactCard() {
   return (
@@ -11,18 +10,6 @@ export default function ContactCard() {
         <h2 className="text-2xl font-semibold text-cyan-700 mb-4">
           Contact & Repositories
         </h2>
-        <div className="flex gap-4 flex-wrap mb-4">
-          <Button asChild variant="outline">
-            <a href="mailto:gaoshuai099@gmail.com">
-              <Mail className="mr-2" size={18} /> Email
-            </a>
-          </Button>
-          <Button asChild variant="outline">
-            <a href="https://github.com/Shuai99999" target="_blank">
-              <Github className="mr-2" size={18} /> GitHub
-            </a>
-          </Button>
-        </div>
         <ul className="text-sm text-gray-700 list-disc list-inside space-y-1">
           <li>
             <a
