@@ -73,7 +73,7 @@ export default function ExperienceCard({
             </div>
             <div>
               <h3 className="text-lg font-bold text-cyan-700">
-                RRS Supply Chain
+                RRS Supply Chain - Qingdao, China
               </h3>
               <p className="italic">
                 Cloud Computing Team Leader | Feb.2017 - Jan.2025
@@ -123,7 +123,7 @@ export default function ExperienceCard({
             </div>
             <div>
               <h3 className="text-lg font-bold text-cyan-700">
-                ZTE Intelligent Transportation
+                ZTE Intelligent Transportation - Qingdao, China
               </h3>
               <p className="italic">Oracle DBA | Mar.2014 - Feb.2017</p>
               <p className="text-gray-700 text-sm leading-relaxed mb-2">
@@ -152,7 +152,7 @@ export default function ExperienceCard({
             </div>
             <div>
               <h3 className="text-lg font-bold text-cyan-700">
-                Shanghai Tianji Technology
+                Shanghai Tianji Technology - Shanghai, China
               </h3>
               <p className="italic">
                 Database Engineer / ETL Developer | Jul.2007 - Mar.2014
