@@ -4,7 +4,6 @@ import NavSection from "./components/NavSection";
 import AboutSection from "./components/AboutSection";
 import GameSection from "./components/GameSection";
 import DataSection from "./components/DataSection";
-import TestSection from "./components/TestSection.jsx";
 
 export default function App() {
   return (

@@ -6,7 +6,12 @@ import { MapContainer, TileLayer, CircleMarker, Popup } from "react-leaflet";
 const timeAllocation = [
   { label: "Coding", percent: 50, color: "#0d9488", textColor: "#fff" },
   { label: "Gaming", percent: 20, color: "#7c3aed", textColor: "#fff" },
-  { label: "Practicing English", percent: 20, color: "#ea580c", textColor: "#fff" },
+  {
+    label: "Practicing English",
+    percent: 20,
+    color: "#ea580c",
+    textColor: "#fff",
+  },
   { label: "Workout", percent: 10, color: "#059669", textColor: "#fff" },
 ];
 
@@ -30,6 +35,7 @@ const skillTimeline = [
   { year: 2022, skill: "MongoDB, PostgreSQL" },
   { year: 2023, skill: "React" },
   { year: 2024, skill: "Express, Next.js" },
+  { year: 2025, skill: "Azure", note: "AZ-900" },
   { year: 2026, skill: "C#, Java" },
   { year: 2026, skill: "AI Development" },
 ];
