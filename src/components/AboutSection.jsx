@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Github, Mail, ChevronDown, ChevronUp } from "lucide-react";
 import HeaderCard from "./HeaderCard";
+import EducationCard from "./EducationCard";
 import CertificationsProjectsCard from "./CertificationsProjectsCard";
 import ExperienceCard from "./ExperienceCard";
 import CodeSection from "./CodeSection";
@@ -17,6 +18,7 @@ export default function App() {
       <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 items-start">
         <div className="md:col-span-2 space-y-6">
           <HeaderCard />
+          <EducationCard />
           <CertificationsProjectsCard />
           <ExperienceCard
             showExperience={showExperience}

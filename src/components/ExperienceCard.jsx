@@ -1,6 +1,7 @@
 // components/ExperienceCard.jsx
 import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
+import { Briefcase } from "lucide-react";
 
 export default function ExperienceCard({
   showExperience,
@@ -15,6 +16,7 @@ export default function ExperienceCard({
           className="text-2xl font-semibold text-cyan-700 mb-4 flex items-center gap-2 cursor-pointer"
           onClick={toggleExperience}
         >
+          <Briefcase size={22} aria-hidden />
           Work Experience{" "}
           {showExperience ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
         </h2>

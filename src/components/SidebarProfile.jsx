@@ -1,6 +1,7 @@
 // components/SidebarProfile.jsx
 import React from "react";
 import { Card } from "@/components/ui/card";
+import { Sparkles } from "lucide-react";
 import SkillList from "./SkillList";
 
 export default function SidebarProfile() {
@@ -16,20 +17,22 @@ export default function SidebarProfile() {
           Shuai Gao
         </h3>
         <p className="sidebar-intro text-sky-700">
-          Hi, I’m a full stack and mobile developer with a strong backend
-          foundation and over 15 years of experience in enterprise systems. I
-          specialize in building scalable web and cross-platform applications
-          using Node.js, Express, React, and React Native. With a deep
-          understanding of databases and production environments, I enjoy
-          designing reliable systems that perform well under real-world
-          constraints. When I’m not coding, I’m probably exploring new game
-          worlds, hitting the gym (sometimes), or spending quality time with my
-          family. For me, it’s all about balance — building great software by
-          day, enjoying life by heart.
+          Hi, I’m a cloud and database architect with over 15 years of
+          experience designing, operating, and optimizing enterprise-scale
+          infrastructure and mission-critical systems. I have led cloud
+          computing teams and built high-availability platforms supporting
+          large-scale production environments.
+          <br /> In addition to infrastructure and DevOps expertise, I actively
+          build modern full-stack applications using Node.js, React, and
+          cloud-native technologies. With a strong foundation in databases,
+          system architecture, and production reliability, I enjoy bridging the
+          gap between infrastructure and application development to deliver
+          scalable, secure, and resilient systems.
         </p>
       </div>
       <div className="p-4 border-t border-sky-100">
-        <h3 className="text-lg font-semibold text-sky-700 mb-2 text-center">
+        <h3 className="text-lg font-semibold text-sky-700 mb-2 flex items-center justify-center gap-2">
+          <Sparkles size={20} aria-hidden />
           My Core Skills
         </h3>
         <SkillList />

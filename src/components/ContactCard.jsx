@@ -2,12 +2,14 @@
 import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { Contact } from "lucide-react";
 
 export default function ContactCard() {
   return (
     <Card className="bg-white border border-cyan-200 shadow-xl card-hover">
       <CardContent className="p-6">
-        <h2 className="text-2xl font-semibold text-cyan-700 mb-4">
+        <h2 className="text-2xl font-semibold text-cyan-700 mb-4 flex items-center gap-2">
+          <Contact size={22} aria-hidden />
           Contact & Repositories
         </h2>
         <ul className="text-sm text-gray-700 list-disc list-inside space-y-1">

@@ -39,23 +39,20 @@ export default function HeaderCard() {
             </Button>
           </div>
           <p className="text-lg text-gray-700">
-            Full Stack Developer | Node.js · React · React Native · MongoDB ·
-            PostgreSQL
+            Cloud & Database Architect | DevOps | Full Stack Engineer
             <br />
             <br />
-            Full Stack & Mobile Developer with 5 years of hands-on experience
-            building web and cross-platform mobile applications using Node.js,
-            Express, React, and React Native (Expo). Backed by 16 years of
-            enterprise DBA and infrastructure operations experience, with deep
-            expertise in database architecture, high-availability systems,
-            performance tuning, and production environment management. Combines
-            application development skills with strong system-level
-            understanding to build scalable and reliable solutions.
-          </p>
-          <br />
-          <p className="text-lg text-gray-700">
-            Diploma in Computer Programming <br />
-            Red Deer Polytechnic — Will graduate December 2026
+            Senior Database & Cloud Infrastructure Leader with 16 years of
+            enterprise DBA experience and 8 years leading cloud computing teams
+            at Haier Group. Extensive expertise in high-availability systems,
+            cloud architecture, and data center modernization. <br />
+            Passionate about modern software development with hands-on
+            experience in MERN stack (MongoDB, Express, React, Node.js),
+            building full-stack applications and automation tools. Strong
+            foundation in backend logic, API design, DevOps practices, and
+            scalable system architecture. <br />
+            Bringing a unique blend of enterprise infrastructure leadership and
+            modern full-stack development skills.
           </p>
         </section>
       </CardContent>
