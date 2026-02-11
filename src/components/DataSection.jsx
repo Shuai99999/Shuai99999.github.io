@@ -1,7 +1,47 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { Card, CardContent } from "@/components/ui/card";
-import { MapPin } from "lucide-react";
-import { MapContainer, TileLayer, CircleMarker, Popup } from "react-leaflet";
+import { MapPin, BarChart2 } from "lucide-react";
+import { MapContainer, TileLayer, CircleMarker, Popup, useMap } from "react-leaflet";
+
+// Only zoom map when Ctrl + wheel; disables Leaflet's built-in
+function MapCtrlWheelZoom() {
+  const map = useMap();
+  useEffect(() => {
+    if (map.scrollWheelZoom && typeof map.scrollWheelZoom.disable === "function") {
+      map.scrollWheelZoom.disable();
+    }
+    map.whenReady(() => {
+      if (map.scrollWheelZoom && typeof map.scrollWheelZoom.disable === "function") {
+        map.scrollWheelZoom.disable();
+      }
+    });
+    const container = map.getContainer();
+    const onWheel = (e) => {
+      if (!e.ctrlKey) return;
+      e.preventDefault();
+      e.stopPropagation();
+      if (e.deltaY > 0) map.zoomOut(1);
+      else map.zoomIn(1);
+    };
+    container.addEventListener("wheel", onWheel, { passive: false });
+    return () => container.removeEventListener("wheel", onWheel);
+  }, [map]);
+  return null;
+}
+
+function MapWheelGuard({ children }) {
+  const wrapperRef = useRef(null);
+  useEffect(() => {
+    const el = wrapperRef.current;
+    if (!el) return;
+    const onWheel = (e) => {
+      if (!e.ctrlKey) e.stopPropagation();
+    };
+    el.addEventListener("wheel", onWheel, { capture: true });
+    return () => el.removeEventListener("wheel", onWheel, { capture: true });
+  }, []);
+  return <div ref={wrapperRef} className="h-64 w-full [&_.leaflet-container]:rounded-lg [&_.leaflet-container]:z-0">{children}</div>;
+}
 
 const timeAllocation = [
   { label: "Coding", percent: 50, color: "#0d9488", textColor: "#fff" },
@@ -74,7 +114,10 @@ export default function DataSection() {
   return (
     <Card className="bg-white border border-cyan-200 shadow-xl card-hover">
       <CardContent className="p-6">
-        <h2 className="text-2xl font-semibold text-cyan-700 mb-6">Analytics</h2>
+        <h2 className="text-2xl font-semibold text-cyan-700 mb-6 flex items-center gap-2">
+          <BarChart2 size={22} aria-hidden />
+          Analytics
+        </h2>
 
         {/* Time allocation bar */}
         <div className="mb-6">
@@ -150,11 +193,14 @@ export default function DataSection() {
 
         {/* Map section */}
         <div>
-          <h3 className="text-sm font-semibold text-cyan-700 mb-2 flex items-center gap-1.5">
+          <h3 className="text-sm font-semibold text-cyan-700 mb-2 flex items-center gap-1.5 flex-wrap">
             <MapPin size={16} aria-hidden /> Places I’ve been
+            <span className="text-xs font-normal text-gray-500 normal-case">
+              Ctrl + scroll to zoom
+            </span>
           </h3>
           <div className="rounded-lg border border-cyan-200 overflow-hidden bg-cyan-50/30">
-            <div className="h-64 w-full [&_.leaflet-container]:rounded-lg [&_.leaflet-container]:z-0">
+            <MapWheelGuard>
               <MapContainer
                 center={[30, 10]}
                 zoom={2}
@@ -164,8 +210,9 @@ export default function DataSection() {
                   [85, 180],
                 ]}
                 style={{ height: "100%", width: "100%" }}
-                scrollWheelZoom={true}
+                scrollWheelZoom={false}
               >
+                <MapCtrlWheelZoom />
                 <TileLayer
                   attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
                   url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -186,7 +233,7 @@ export default function DataSection() {
                   </CircleMarker>
                 ))}
               </MapContainer>
-            </div>
+            </MapWheelGuard>
             <div className="border-t border-cyan-100 px-3 py-2 flex flex-wrap gap-2 bg-white/80">
               {mapFootprints.map(({ label }) => (
                 <span

@@ -1,6 +1,7 @@
 // components/SidebarProfile.jsx
 import React from "react";
 import { Card } from "@/components/ui/card";
+import { Sparkles } from "lucide-react";
 import SkillList from "./SkillList";
 
 export default function SidebarProfile() {
@@ -29,7 +30,8 @@ export default function SidebarProfile() {
         </p>
       </div>
       <div className="p-4 border-t border-sky-100">
-        <h3 className="text-lg font-semibold text-sky-700 mb-2 text-center">
+        <h3 className="text-lg font-semibold text-sky-700 mb-2 flex items-center justify-center gap-2">
+          <Sparkles size={20} aria-hidden />
           My Core Skills
         </h3>
         <SkillList />

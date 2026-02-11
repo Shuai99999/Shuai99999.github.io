@@ -1,6 +1,7 @@
 // components/CertificationsProjectsCard.jsx
 import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
+import { Wrench } from "lucide-react";
 
 const skillSections = [
   {
@@ -52,7 +53,8 @@ export default function CertificationsProjectsCard() {
   return (
     <Card className="bg-white border border-cyan-200 shadow-xl card-hover">
       <CardContent className="p-6">
-        <h2 className="text-xl font-bold text-cyan-700 mb-4">
+        <h2 className="text-xl font-bold text-cyan-700 mb-4 flex items-center gap-2">
+          <Wrench size={22} aria-hidden />
           Core Technical Skills
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">

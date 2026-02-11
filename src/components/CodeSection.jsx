@@ -1,4 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
+import { Code2 } from "lucide-react";
 
 const codeProjects = [
   {
@@ -19,7 +20,10 @@ export default function CodeSection() {
   return (
     <Card className="bg-white border border-cyan-200 shadow-xl card-hover">
       <CardContent className="p-6">
-        <h2 className="text-2xl font-semibold text-cyan-700 mb-4">Code</h2>
+        <h2 className="text-2xl font-semibold text-cyan-700 mb-4 flex items-center gap-2">
+          <Code2 size={22} aria-hidden />
+          Code
+        </h2>
         <ul className="space-y-6">
           {codeProjects.map(({ title, url, description }) => (
             <li key={url}>

@@ -1,5 +1,6 @@
 import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
+import { Gamepad2 } from "lucide-react";
 
 // 图片放在 public/game 文件夹里，按文件名排序展示
 const gameImageNames = [
@@ -27,7 +28,10 @@ export default function GameSection() {
   return (
     <Card className="bg-white border border-cyan-200 shadow-xl card-hover">
       <CardContent className="p-6">
-        <h2 className="text-2xl font-semibold text-cyan-700 mb-4">Game</h2>
+        <h2 className="text-2xl font-semibold text-cyan-700 mb-4 flex items-center gap-2">
+          <Gamepad2 size={22} aria-hidden />
+          Game
+        </h2>
         <div className="flex flex-wrap gap-4">
           {gameImageNames.map((name) => (
             <img
