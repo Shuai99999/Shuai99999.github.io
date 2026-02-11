@@ -22,6 +22,57 @@ export default function ExperienceCard({
           <div className="text-sm text-gray-700 space-y-6">
             <div>
               <h3 className="text-lg font-bold text-cyan-700">
+                Blackline Safety - Calgary, AB
+              </h3>
+              <p className="italic">
+                Systems Analyst | January 2025 to Present
+              </p>
+              <p className="text-gray-700 text-sm leading-relaxed mb-2">
+                Responsible for enterprise server infrastructure, database
+                administration, and cybersecurity operations across on-premise
+                and cloud environments.
+              </p>
+              <ul className="list-disc list-inside mt-2 space-y-1">
+                <li>
+                  Administer and optimize Windows Server and Azure-based
+                  infrastructure, ensuring high availability, redundancy, and
+                  performance stability
+                </li>
+                <li>
+                  Manage core services including Active Directory, Group Policy,
+                  DNS, DHCP, and enterprise file services
+                </li>
+                <li>
+                  Oversee Microsoft SQL Server and MySQL environments, including
+                  installation, tuning, backup/recovery, replication, and
+                  security configuration
+                </li>
+                <li>
+                  Implement patch management and vulnerability remediation
+                  programs to strengthen system security posture
+                </li>
+                <li>
+                  Monitor and respond to security alerts from EDR/MDR platforms
+                  (Defender for Endpoint, Arctic Wolf), performing log analysis
+                  and incident triage
+                </li>
+                <li>
+                  Enforce access control policies, including PAM and MFA, and
+                  maintain compliance with ISO 27001, SOC 2, GDPR, and CSOX
+                  standards
+                </li>
+                <li>
+                  Develop automation scripts for database maintenance,
+                  monitoring, and integrity validation
+                </li>
+                <li>
+                  Maintain disaster recovery and business continuity strategies,
+                  supporting audit readiness and risk management initiatives
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-lg font-bold text-cyan-700">
                 RRS Supply Chain
               </h3>
               <p className="italic">
