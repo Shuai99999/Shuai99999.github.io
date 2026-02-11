@@ -14,7 +14,7 @@ export default function EducationCard() {
         <div className="text-gray-700 space-y-1">
           <p className="text-lg font-medium">Diploma in Computer Programming</p>
           <p className="text-base text-gray-600">
-            Red Deer Polytechnic — Will graduate December 2026
+            Red Deer Polytechnic, Expected December 2026
           </p>
         </div>
       </CardContent>

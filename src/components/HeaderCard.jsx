@@ -52,11 +52,6 @@ export default function HeaderCard() {
             application development skills with strong system-level
             understanding to build scalable and reliable solutions.
           </p>
-          <br />
-          <p className="text-lg text-gray-700">
-            Diploma in Computer Programming <br />
-            Red Deer Polytechnic — Will graduate December 2026
-          </p>
         </section>
       </CardContent>
     </Card>
