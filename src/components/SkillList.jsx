@@ -3,90 +3,103 @@ import React from "react";
 import Skill from "./Skill";
 
 const skills = [
-  // Backend
+  // Database Architecture
   {
-    skill: "Node.js",
-    level: "advanced",
-    color: "#3C873A",
+    skill: "Oracle (MAA / Data Guard)",
+    level: "expert",
+    color: "#F80000",
   },
   {
-    skill: "Express.js",
+    skill: "MySQL",
+    level: "expert",
+    color: "#00758F",
+  },
+  {
+    skill: "Microsoft SQL Server (Always On)",
     level: "advanced",
-    color: "#000000",
+    color: "#CC2927",
   },
 
-  // Frontend
+  // High Availability & DR
   {
-    skill: "React",
-    level: "intermediate",
-    color: "#61DBFB",
+    skill: "High Availability & Disaster Recovery",
+    level: "expert",
+    color: "#6C63FF",
   },
   {
-    skill: "JavaScript (ES6+)",
+    skill: "Backup & Recovery Strategy",
+    level: "expert",
+    color: "#4CAF50",
+  },
+
+  // Cloud & Infrastructure
+  {
+    skill: "Azure",
+    level: "intermediate",
+    color: "#0078D4",
+  },
+  {
+    skill: "Linux Server Administration",
     level: "advanced",
-    color: "#F7DF1E",
+    color: "#FCC624",
   },
   {
-    skill: "HTML5 + CSS3",
-    level: "intermediate",
-    color: "#E34F26",
-  },
-
-  // Mobile
-  {
-    skill: "React Native (Expo)",
-    level: "intermediate",
-    color: "#4630EB",
-  },
-
-  // Database
-  {
-    skill: "MongoDB",
+    skill: "Windows Server",
     level: "advanced",
-    color: "#4DB33D",
-  },
-  {
-    skill: "PostgreSQL",
-    level: "advanced",
-    color: "#336791",
+    color: "#00A4EF",
   },
 
-  // BaaS
-  {
-    skill: "Supabase",
-    level: "intermediate",
-    color: "#3ECF8E",
-  },
-  {
-    skill: "Appwrite",
-    level: "intermediate",
-    color: "#F02E65",
-  },
-
-  // DevOps & Deployment
+  // DevOps & Containerization
   {
     skill: "Docker",
-    level: "intermediate",
+    level: "advanced",
     color: "#2496ED",
   },
   {
-    skill: "Git & GitHub",
-    level: "advanced",
-    color: "#181717",
-  },
-
-  // Cloud
-  {
-    skill: "Cloud Deployment",
+    skill: "Kubernetes",
     level: "intermediate",
-    color: "#FF9900",
+    color: "#326CE5",
+  },
+  {
+    skill: "Jenkins",
+    level: "advanced",
+    color: "#D33833",
+  },
+  {
+    skill: "Ansible",
+    level: "intermediate",
+    color: "#EE0000",
   },
 
-  // Architecture
+  // Infrastructure Services
   {
-    skill: "RESTful API Design",
+    skill: "Active Directory & Group Policy",
     level: "advanced",
-    color: "#6C63FF",
+    color: "#0078D4",
+  },
+  {
+    skill: "DNS / DHCP / Networking",
+    level: "advanced",
+    color: "#FF6F00",
+  },
+
+  // Security & Compliance
+  {
+    skill: "IT Security & Vulnerability Management",
+    level: "advanced",
+    color: "#8E44AD",
+  },
+  {
+    skill: "ITIL Incident & Change Management",
+    level: "advanced",
+    color: "#2ECC71",
+  },
+
+  // Automation
+  {
+    skill: "Shell / PowerShell Scripting",
+    level: "expert",
+    color: "#5391FE",
   },
 ];
 

@@ -3,11 +3,13 @@ import React from "react";
 
 export default function Skill({ skill, level, color }) {
   const width =
-    level === "advanced"
+    level === "expert"
       ? "w-full"
-      : level === "intermediate"
-      ? "w-2/3"
-      : "w-1/3";
+      : level === "advanced"
+        ? "w-4/5"
+        : level === "intermediate"
+          ? "w-3/5"
+          : "w-1/3";
   return (
     <div className="mb-2">
       <div className="flex justify-between mb-1 text-sm font-medium text-gray-800">
