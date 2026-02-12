@@ -2,16 +2,20 @@
 import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Github, Mail, Phone, MessageCircle } from "lucide-react";
+import { Github, Mail, Phone, MessageCircle, MapPin } from "lucide-react";
 
 export default function HeaderCard() {
   return (
     <Card className="bg-white border border-cyan-200 shadow-xl card-hover">
       <CardContent className="p-6">
         <section>
-          <h1 className="text-5xl font-extrabold text-cyan-700 mb-4">
+          <h1 className="text-5xl font-extrabold text-cyan-700 mb-1">
             Shuai Gao
           </h1>
+          <p className="text-base text-gray-600 mb-4 flex items-center gap-1.5">
+            <MapPin size={18} aria-hidden />
+            Calgary, AB, CA
+          </p>
           <div className="flex gap-4 flex-wrap mb-4">
             <Button asChild variant="outline">
               <a href="mailto:gaoshuai099@gmail.com">
