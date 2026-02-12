@@ -3,16 +3,34 @@ import { Code2 } from "lucide-react";
 
 const codeProjects = [
   {
+    title: "Enterprise Automation Platform (Django)",
+    url: "https://github.com/Shuai99999/cmdb.git",
+    description:
+      "Centralized CMDB and workflow automation platform built with Django to streamline infrastructure operations and asset management.",
+  },
+  {
+    title: "API-Driven Workflow Orchestration",
+    url: "https://github.com/Shuai99999/officeAutomation.git",
+    description:
+      "Automated enterprise approval processes via REST API integration, reducing manual operations and improving process efficiency.",
+  },
+  {
+    title: "Data Lifecycle & Migration Framework",
+    url: "https://github.com/Shuai99999/DemoDataxJob.git",
+    description:
+      "Cross-platform data archiving and migration framework (MySQL, Oracle, Impala) using DataX. Sanitized enterprise demo.",
+  },
+  {
+    title: "Production Database Automation Toolkit",
+    url: "https://github.com/Shuai99999/DemoOracleSource.git",
+    description:
+      "Automated Oracle data lifecycle management and cleanup for production systems (sanitized core logic).",
+  },
+  {
     title: "EverMotion Trading",
     url: "https://evermotion.ca/",
     description:
       "Cross-border e-commerce site built with MongoDB, Express, and React (MERN stack).",
-  },
-  {
-    title: "SHELFIE_APP",
-    url: "https://github.com/Shuai99999/SHELFIE_APP",
-    description:
-      "Mobile app built with React Native (Expo); backend powered by Appwrite.",
   },
 ];
 
