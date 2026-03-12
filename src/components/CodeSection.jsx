@@ -6,10 +6,11 @@ const codeProjects = [
     title: "Mobile App Project Demo – MatchUpSports",
     url: "https://www.tiktok.com/@gaoshuai099/video/7614005190823365909",
     description: `This app focuses on two main goals:
-
+\n\n
 • Allowing individual players to easily create or join local sports matches.
+\n
 • Providing management tools for sports clubs to manage members, match records, player performance statistics, and basic financial information.
-
+\n\n
 MatchUpSports is currently developed as a prototype, and I plan to commercialize it in the near future.`,
   },
   {
