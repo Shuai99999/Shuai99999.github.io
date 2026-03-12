@@ -3,6 +3,22 @@ import { Code2 } from "lucide-react";
 
 const codeProjects = [
   {
+    title: "Mobile App Project Demo – MatchUpSports",
+    url: "https://www.tiktok.com/@gaoshuai099/video/7614005190823365909",
+    description: `This app focuses on two main goals:
+
+• Allowing individual players to easily create or join local sports matches.
+• Providing management tools for sports clubs to manage members, match records, player performance statistics, and basic financial information.
+
+MatchUpSports is currently developed as a prototype, and I plan to commercialize it in the near future.`,
+  },
+  {
+    title: "EverMotion Trading",
+    url: "https://evermotion.ca/",
+    description:
+      "Cross-border e-commerce site built with MongoDB, Express, and React (MERN stack).",
+  },
+  {
     title: "Enterprise Automation Platform (Django)",
     url: "https://github.com/Shuai99999/cmdb.git",
     description:
@@ -25,12 +41,6 @@ const codeProjects = [
     url: "https://github.com/Shuai99999/DemoOracleSource.git",
     description:
       "Automated Oracle data lifecycle management and cleanup for production systems (sanitized core logic).",
-  },
-  {
-    title: "EverMotion Trading",
-    url: "https://evermotion.ca/",
-    description:
-      "Cross-border e-commerce site built with MongoDB, Express, and React (MERN stack).",
   },
 ];
 
