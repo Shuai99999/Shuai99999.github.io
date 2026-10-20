@@ -6,6 +6,7 @@ import HeaderCard from "./HeaderCard";
 import EducationCard from "./EducationCard";
 import CertificationsProjectsCard from "./CertificationsProjectsCard";
 import ExperienceCard from "./ExperienceCard";
+import DataLabSection from "./DataLabSection";
 import CodeSection from "./CodeSection";
 import SidebarProfile from "./SidebarProfile";
 
@@ -26,6 +27,9 @@ export default function App() {
             ChevronUp={ChevronUp}
             ChevronDown={ChevronDown}
           />
+          <section id="data-lab">
+            <DataLabSection />
+          </section>
           <section id="code">
             <CodeSection />
           </section>
