@@ -3,104 +3,32 @@ import React from "react";
 import Skill from "./Skill";
 
 const skills = [
-  // Database Architecture
-  {
-    skill: "Oracle (MAA / Data Guard)",
-    level: "expert",
-    color: "#F80000",
-  },
-  {
-    skill: "MySQL",
-    level: "expert",
-    color: "#00758F",
-  },
-  {
-    skill: "Microsoft SQL Server (Always On)",
-    level: "advanced",
-    color: "#CC2927",
-  },
+  // Backend (.NET Focus)
+  { skill: "ASP.NET Core (C#)", level: "intermediate", color: "#512BD4" },
+  { skill: "Entity Framework Core", level: "intermediate", color: "#68217A" },
+  { skill: "Node.js", level: "intermediate", color: "#3C873A" },
 
-  // High Availability & DR
-  {
-    skill: "High Availability & Disaster Recovery",
-    level: "expert",
-    color: "#6C63FF",
-  },
-  {
-    skill: "Backup & Recovery Strategy",
-    level: "expert",
-    color: "#4CAF50",
-  },
+  // Frontend
+  { skill: "React", level: "intermediate", color: "#61DBFB" },
+  { skill: "JavaScript", level: "intermediate", color: "#F7DF1E" },
+  { skill: "HTML5 & CSS3", level: "intermediate", color: "#E34F26" },
 
-  // Cloud & Infrastructure
-  {
-    skill: "Azure",
-    level: "intermediate",
-    color: "#0078D4",
-  },
-  {
-    skill: "Linux Server Administration",
-    level: "advanced",
-    color: "#FCC624",
-  },
-  {
-    skill: "Windows Server",
-    level: "advanced",
-    color: "#00A4EF",
-  },
+  // Database (Core Strength)
+  { skill: "Oracle", level: "advanced", color: "#F80000" },
+  { skill: "Microsoft SQL Server", level: "advanced", color: "#CC2927" },
+  { skill: "MongoDB", level: "advanced", color: "#4DB33D" },
+  { skill: "PostgreSQL", level: "intermediate", color: "#336791" },
 
-  // DevOps & Containerization
-  {
-    skill: "Docker",
-    level: "advanced",
-    color: "#2496ED",
-  },
-  {
-    skill: "Kubernetes",
-    level: "intermediate",
-    color: "#326CE5",
-  },
-  {
-    skill: "Jenkins",
-    level: "advanced",
-    color: "#D33833",
-  },
-  {
-    skill: "Ansible",
-    level: "intermediate",
-    color: "#EE0000",
-  },
+  // Infrastructure
+  { skill: "Linux", level: "advanced", color: "#FCC624" },
+  { skill: "Microsoft Azure", level: "intermediate", color: "#0078D4" },
+  { skill: "Docker", level: "intermediate", color: "#2496ED" },
+  { skill: "CI/CD (Jenkins / GitHub Actions)", level: "intermediate", color: "#6C63FF" },
+  { skill: "Git & GitHub", level: "advanced", color: "#181717" },
 
-  // Infrastructure Services
-  {
-    skill: "Active Directory & Group Policy",
-    level: "advanced",
-    color: "#0078D4",
-  },
-  {
-    skill: "DNS / DHCP / Networking",
-    level: "advanced",
-    color: "#FF6F00",
-  },
-
-  // Security & Compliance
-  {
-    skill: "IT Security & Vulnerability Management",
-    level: "advanced",
-    color: "#8E44AD",
-  },
-  {
-    skill: "ITIL Incident & Change Management",
-    level: "advanced",
-    color: "#2ECC71",
-  },
-
-  // Automation
-  {
-    skill: "Shell / PowerShell Scripting",
-    level: "expert",
-    color: "#5391FE",
-  },
+  // Architecture
+  { skill: "RESTful API Design", level: "advanced", color: "#6C63FF" },
+  { skill: "MVC Architecture", level: "advanced", color: "#9C27B0" },
 ];
 
 export default function SkillList() {

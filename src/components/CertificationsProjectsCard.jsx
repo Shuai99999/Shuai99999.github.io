@@ -1,60 +1,58 @@
 // components/CertificationsProjectsCard.jsx
 import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
-import {
-  Wrench,
-  Award,
-  Database,
-  Cloud,
-  Container,
-  Code2,
-} from "lucide-react";
+import { Wrench, Award, Code2, Cloud, Building2, Database } from "lucide-react";
 
 const certifications = [
-  "Oracle Certified Master (OCM), 2014",
-  "Red Hat Certified Engineer (RHCE), 2010",
-  "Microsoft Certified: Azure Fundamentals (AZ-900), 2025",
+  "RHCE (Red Hat Certified Engineer), 2010",
+  "OCM (Oracle Certified Master), 2014",
+  "AZ-900 (Microsoft Azure Fundamentals), 2025",
 ];
 
 const technicalSections = [
   {
-    title: "Database & Architecture",
-    icon: Database,
-    items: [
-      "Oracle & MySQL & MSSQL deployment, performance tuning, backup/recovery, migration, monitoring",
-      "Oracle MAA architecture (Primary/Standby switchovers)",
-      "SQL Server Always On Availability Groups & Failover Clustering",
-      "Enterprise-level data and database migration strategies",
-      "ETL processing and advanced SQL procedures",
-    ],
-  },
-  {
-    title: "Infrastructure & Cloud",
-    icon: Cloud,
-    items: [
-      "Data center design, build, and migration",
-      "IT asset management, capacity planning, cost estimation",
-      "ITIL-based incident & change management",
-      "Security & compliance operations",
-    ],
-  },
-  {
-    title: "Middleware & DevOps",
-    icon: Container,
-    items: [
-      "Docker, Kubernetes, Git, Jenkins, Ansible",
-    ],
-  },
-  {
     title: "Full Stack Development",
     icon: Code2,
     items: [
+      "ASP.NET Core (C#) & Entity Framework Core",
       "MERN Stack (MongoDB, Express, React, Node.js)",
-      "RESTful API design",
-      "Authentication & JWT",
+      "RESTful API design & implementation",
+      "Authentication (JWT-based security)",
       "MVC architecture",
-      "Git version control",
-      "Basic CI/CD pipeline integration",
+    ],
+  },
+  {
+    title: "Cloud & DevOps",
+    icon: Cloud,
+    items: [
+      "Microsoft Azure (foundational services & deployment concepts)",
+      "Docker & Kubernetes (containerization fundamentals)",
+      "Jenkins & CI/CD pipeline fundamentals",
+      "Infrastructure automation (Ansible basics)",
+      "Git & version control best practices",
+    ],
+  },
+  {
+    title: "Cloud Infrastructure & Operations",
+    icon: Building2,
+    items: [
+      "Data center design, build, and migration",
+      "IT asset management, capacity planning & cost estimation",
+      "ITIL-based incident & change management",
+      "Security & compliance operations",
+      "Production environment reliability & monitoring",
+    ],
+  },
+  {
+    title: "Database & Data Architecture",
+    icon: Database,
+    items: [
+      "Oracle, MySQL, Microsoft SQL Server deployment & optimization",
+      "Oracle MAA (Primary/Standby architecture & switchovers)",
+      "SQL Server Always On & Failover Clustering",
+      "Enterprise-level data migration strategies",
+      "ETL processing & advanced SQL development",
+      "High-availability architecture & disaster recovery planning",
     ],
   },
 ];
@@ -69,7 +67,6 @@ export default function CertificationsProjectsCard() {
         </h2>
 
         <div className="space-y-6">
-          {/* Certifications as compact badges */}
           <div>
             <h3 className="text-base font-semibold text-cyan-600 mb-3 flex items-center gap-2">
               <Award size={18} aria-hidden />
@@ -97,23 +94,19 @@ export default function CertificationsProjectsCard() {
             </div>
           </div>
 
-          {/* Technical Expertise: single column for even flow */}
           <div>
             <h3 className="text-base font-semibold text-cyan-600 mb-3 flex items-center gap-2">
               Technical Expertise
             </h3>
-            <div className="space-y-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {technicalSections.map((section) => {
                 const Icon = section.icon;
                 return (
-                  <div
-                    key={section.title}
-                    className="rounded-lg border border-cyan-100 bg-cyan-50/30 p-4"
-                  >
-                    <h4 className="mb-2 flex items-center gap-2 text-sm font-semibold text-cyan-700">
+                  <div key={section.title} className="space-y-2">
+                    <h3 className="text-base font-semibold text-cyan-600 border-b border-cyan-100 pb-1 flex items-center gap-2">
                       <Icon size={18} aria-hidden className="shrink-0" />
                       {section.title}
-                    </h4>
+                    </h3>
                     <ul className="text-gray-700 text-sm list-disc list-inside space-y-1">
                       {section.items.map((item) => (
                         <li key={item} className="leading-snug">

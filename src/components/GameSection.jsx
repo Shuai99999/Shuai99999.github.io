@@ -36,7 +36,7 @@ export default function GameSection() {
           {gameImageNames.map((name) => (
             <img
               key={name}
-              src={`/game/${encodeURIComponent(name)}`}
+              src={`${import.meta.env.BASE_URL}game/${encodeURIComponent(name)}`}
               alt="Game"
               className="rounded-lg object-contain h-36 w-36 border border-gray-200"
             />

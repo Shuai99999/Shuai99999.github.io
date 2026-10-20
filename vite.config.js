@@ -4,7 +4,7 @@ import path from "path";
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: "https://Shuai99999.github.io/",
+  base: "/",
   plugins: [react()],
   resolve: {
     alias: {

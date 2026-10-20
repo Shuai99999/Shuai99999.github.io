@@ -6,6 +6,7 @@ import HeaderCard from "./HeaderCard";
 import EducationCard from "./EducationCard";
 import CertificationsProjectsCard from "./CertificationsProjectsCard";
 import ExperienceCard from "./ExperienceCard";
+import CodeSection from "./CodeSection";
 import SidebarProfile from "./SidebarProfile";
 
 export default function App() {
@@ -14,8 +15,8 @@ export default function App() {
 
   return (
     <main className="min-h-screen bg-[#F0F9FF] text-gray-900 p-6 md:p-12">
-      <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 items-start">
-        <div className="md:col-span-2 space-y-6">
+      <div className="max-w-6xl mx-auto grid lg:grid-cols-3 gap-8 items-start">
+        <div className="lg:col-span-2 space-y-6">
           <HeaderCard />
           <EducationCard />
           <CertificationsProjectsCard />
@@ -25,6 +26,9 @@ export default function App() {
             ChevronUp={ChevronUp}
             ChevronDown={ChevronDown}
           />
+          <section id="code">
+            <CodeSection />
+          </section>
         </div>
         <SidebarProfile />
       </div>
