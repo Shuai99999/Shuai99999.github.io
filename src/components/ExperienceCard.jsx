@@ -14,16 +14,22 @@ export default function ExperienceCard({
   return (
     <Card className="bg-white border border-cyan-200 shadow-xl card-hover">
       <CardContent className="p-6">
-        <h2
-          className="text-2xl font-semibold text-cyan-700 mb-4 flex items-center gap-2 cursor-pointer"
+        <button
+          type="button"
+          className="mb-4 flex w-full items-center gap-2 text-left text-2xl font-semibold text-cyan-700"
+          aria-expanded={showExperience}
+          aria-controls="work-experience-details"
           onClick={toggleExperience}
         >
           <Briefcase size={22} aria-hidden />
-          Work Experience{" "}
-          <ToggleIcon size={20} />
-        </h2>
+          <span className="flex-1">Work Experience</span>
+          <ToggleIcon size={20} aria-hidden />
+        </button>
         {showExperience && (
-          <div className="text-sm text-gray-700 space-y-6">
+          <div
+            id="work-experience-details"
+            className="text-sm text-gray-700 space-y-6"
+          >
             <div>
               <h3 className="text-lg font-bold text-cyan-700">
                 Red Deer Polytechnic - Red Deer, Alberta
