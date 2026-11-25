@@ -67,19 +67,21 @@ export default function HeaderCard() {
             </p>
             <p>
               Currently completing a Computer Programming diploma at Red Deer
-              Polytechnic, expanding my expertise into full-stack development,
-              AI engineering, and cloud-native applications.
+              Polytechnic, expanding my expertise in modern software
+              development, data analytics, and cloud-native applications.
             </p>
             <p>
-              My technical background spans Oracle, SQL Server, MySQL, Azure,
-              Docker, Kubernetes, Python, C#, ASP.NET Core, React, Node.js, and
+              My technical background spans database administration, data
+              engineering, data analytics, public cloud platforms (Azure and
+              AWS), Databricks, and full-stack development, with hands-on
+              experience in SQL, Python, the MERN stack, C#, ASP.NET Core, and
               CI/CD.
             </p>
             <p>
               I&apos;m particularly interested in full-stack development and data
               engineering, with a focus on combining my enterprise IT
-              infrastructure experience with modern software development
-              practices to build scalable, reliable, and intelligent systems.
+              experience with modern software development practices to build
+              scalable, reliable applications and data-driven solutions.
             </p>
           </div>
         </section>
