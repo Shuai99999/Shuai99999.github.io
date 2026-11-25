@@ -76,10 +76,10 @@ export default function HeaderCard() {
               CI/CD.
             </p>
             <p>
-              I&apos;m particularly interested in AI Data Engineering, AI Agent
-              Development, and AI Platform Engineering, combining enterprise
-              infrastructure experience with modern software development to
-              build scalable, intelligent systems.
+              I&apos;m particularly interested in full-stack development and data
+              engineering, with a focus on combining my enterprise IT
+              infrastructure experience with modern software development
+              practices to build scalable, reliable, and intelligent systems.
             </p>
           </div>
         </section>
